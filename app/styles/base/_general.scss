@@ -8,21 +8,24 @@ body {
 	-webkit-tap-highlight-color:rgba(0,0,0,0);
 	-moz-osx-font-smoothing: grayscale;
 	opacity: 0;
+
+	background: url('../images/jacket-grey-full.jpg') no-repeat;
+	background-position: center -320px;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 7px;
+		background: $pink;
+	}
 }
 
 .content-loaded {
 	opacity: 1;
 	transition: opacity 0.8s ease-out;
-}
-
-.wrapper {
-	background: url('../images/jacket-grey-full.jpg') no-repeat;
-	//background-size: 100% auto;
-	//background-size: auto 
-	background-position: center -320px;
-	display: block;
-	overflow: hidden;
-	border-top: 7px solid $pink;
 }
 
 .inline-block {
@@ -57,4 +60,10 @@ body {
 	&:hover {
 		color: $pink;
 	}
+}
+
+.browsehappy {
+	background: $white;
+	margin-top: 65px;
+	text-align: center;
 }

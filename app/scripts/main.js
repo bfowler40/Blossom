@@ -408,6 +408,14 @@ blossom.directive('body', function($window){
 
 			}, 3000);
 
+			Modernizr.csstransforms3d();
+
+			// if(!Modernizr.csstransforms3d){
+				
+			// 	element.addClass('no-csstransforms3d');
+
+			// };
+
 		}
 
 	};
