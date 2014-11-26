@@ -84,6 +84,12 @@
 		padding: 0 40px;
 	}
 
+	.location-dt,
+	.location-dd {
+		width: auto;
+		display: block;
+	}
+
 }
 
 @media all and (max-width: 960px){
@@ -102,7 +108,7 @@
 
 @media all and (min-width: 1200px){
 
-	body {
+	.wrapper {
 		background-size: 100% auto;
 		background-position: center -250px;
 	}
@@ -111,7 +117,7 @@
 
 @media all and (min-width: 1460px){
 
-	body {
+	.wrapper {
 		background-position: center -400px;
 	}
 
