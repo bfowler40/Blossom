@@ -9,9 +9,6 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	opacity: 0;
 
-	background: url('../images/jacket-grey-full.jpg') no-repeat;
-	background-position: center -320px;
-
 	&:before {
 		content: '';
 		position: absolute;
@@ -21,6 +18,13 @@ body {
 		height: 7px;
 		background: $pink;
 	}
+}
+
+.wrapper {
+	background: url('../images/jacket-grey-full.jpg') no-repeat;
+	background-position: center -320px;
+	display: block;
+	overflow: hidden;
 }
 
 .content-loaded {
