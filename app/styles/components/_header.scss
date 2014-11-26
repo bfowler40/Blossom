@@ -27,6 +27,10 @@
 	transition: transform 0.3s ease-out;
 }
 
+.no-csstransforms3d .header-call-us {
+	display: none;
+}
+
 .header-phone-number {
 	transition: opacity 0.3s ease;
 }
