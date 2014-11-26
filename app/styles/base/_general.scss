@@ -1,0 +1,60 @@
+
+body {
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+	-webkit-touch-callout:none;
+	-webkit-text-size-adjust:none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	-moz-osx-font-smoothing: grayscale;
+	opacity: 0;
+}
+
+.content-loaded {
+	opacity: 1;
+	transition: opacity 0.8s ease-out;
+}
+
+.wrapper {
+	background: url('../images/jacket-grey-full.jpg') no-repeat;
+	//background-size: 100% auto;
+	//background-size: auto 
+	background-position: center -320px;
+	display: block;
+	overflow: hidden;
+	border-top: 7px solid $pink;
+}
+
+.inline-block {
+	@include inline-block();
+}
+
+.pink {
+	background-color: $pink;
+}
+
+.pink-variant-1 {
+	background-color: $pink-variant-1;
+}
+
+.pink-variant-2 {
+	background-color: $pink-variant-2;
+}
+
+.pink-variant-3 {
+	background-color: $pink-variant-3;
+}
+
+.pink-variant-4 {
+	background-color: $pink-variant-4;
+}
+
+.hidden-link {
+	color: $copy;
+	text-decoration: none;
+	transition: color 0.4s ease-in-out;
+
+	&:hover {
+		color: $pink;
+	}
+}

@@ -1,0 +1,118 @@
+
+@media all and (max-width: 520px){
+
+	.component-header-phone-container {
+		left: 50%;
+		transform: translate3d(-50%, 0, 0);
+	}
+
+	.header-site-name {
+		@include font-size(8);
+	}
+
+	.header-logo-hr {
+		width: 110px;
+	}
+
+	.header-logo-needle {
+		margin-top: -18px;
+		width: 60px;
+		height: 60px;
+		background-size: 60px;
+	}
+
+	.header-site-description {
+		@include font-size(2.2);
+		margin-top: -10px;
+	}
+
+	.heading-line {
+		display: inline;
+	}
+
+	.section-services-h1 {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.header-phone-link:hover {
+		.header-phone-number {
+			opacity: 1;
+		}
+		.header-call-us {
+			transform: translate3d(-135px, 0, 0);
+		}
+	}
+
+	.copyright-info {
+		text-align: center;
+		margin: 0;
+	}
+
+}
+
+@media all and (max-width: 600px){
+
+	.container-two-col-section,
+	.section-intro-header {
+		float: none;
+		display: block;
+	}
+
+	.three-col-list-item {
+		display: block;
+		width: auto;
+		margin: 20px auto;
+		max-width: 280px;
+	}
+
+	.two-col-section-small,
+	.two-col-section-large {
+		width: auto;
+	}
+
+	.section-intro-right {
+		padding-right: 20px;
+	}
+
+	.section-location-left-inner {
+		float: none;
+	}
+
+	.section-location-right,
+	.section-location-left {
+		padding: 0 40px;
+	}
+
+}
+
+@media all and (max-width: 960px){
+
+	.component-header-phone-container {
+
+		position: absolute;
+
+	}
+
+	.section-testimonials {
+		background-position: center 0;
+	}
+
+}
+
+@media all and (min-width: 1200px){
+
+	.wrapper {
+		background-size: 100% auto;
+		background-position: center -250px;
+	}
+
+}
+
+@media all and (min-width: 1460px){
+
+	.wrapper {
+		background-position: center -400px;
+	}
+
+}

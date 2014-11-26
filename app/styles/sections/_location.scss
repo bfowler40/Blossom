@@ -1,0 +1,38 @@
+
+.section-location {
+	padding-bottom: 0px;
+}
+
+.section-location-right {
+	float: right;
+}
+
+.section-location-left-inner {
+	float: right;
+	margin: 0 40px 0 0;
+}
+
+.location-definition-list {
+	@include clear-floats();
+}
+
+.location-dt,
+.location-dd {
+	@include inline-block();
+	margin: 0 0 10px 0;
+}
+
+.location-dt {
+	font-weight: $font-bold;
+	vertical-align: top;
+	width: 30%;
+}
+
+.map-container {
+	@include clear-floats();
+	padding-top: 60px;
+}
+
+.map {
+	height: 400px;
+}

@@ -1,0 +1,14 @@
+
+.section-testimonials {
+	padding: 100px 20px;
+	background: url('../images/scissors-grey.jpg');
+	background-size: cover;
+	background-position: center -80px;
+}
+
+.section-testimonials-h1 {
+	@include font-size(4);
+	color: $white;
+	margin-bottom: 0px;
+	text-shadow: 1px 1px 5px $text-shadow;
+}

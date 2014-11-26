@@ -1,0 +1,11 @@
+
+.component-footer {
+	background: #333333;
+	color: #dddddd;
+	padding: 20px 0;
+}
+
+.copyright-info {
+	margin: 0 0 0 40px;
+	@include font-size(1.4);
+}

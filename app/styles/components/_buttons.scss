@@ -1,0 +1,35 @@
+
+.button {
+	@include inline-block();
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	padding: 12px;
+	min-width: 100px;
+	margin: 0 5px;
+	text-shadow: 1px 1px $text-shadow;
+	
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		box-shadow: 2px 2px 5px $shadow;
+		background-size: 200%;
+	}
+
+	&:active {
+		box-shadow: 5px 5px 8px $shadow;
+	}
+
+	&:first-of-type {
+		margin-left: 0;
+	}
+
+	&:last-of-type {
+		margin-right: 0;
+	}
+	
+}
+
+.button-bottom-margin {
+	margin-bottom: 30px;
+}

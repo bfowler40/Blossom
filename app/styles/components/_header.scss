@@ -1,0 +1,155 @@
+
+.component-header-phone-container {
+	position: fixed;
+	top: 0px;
+	left: 20px;
+	background: #ffffff;
+	overflow: hidden;
+	cursor: pointer;
+	z-index: 2;
+}
+
+
+.header-call-us {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: $pink;
+	text-indent: 70px;
+	line-height: 48px;
+	color: $white;
+	font-weight: $font-bold;
+	z-index: 0;
+	
+	transform: translate3d(-135px, 0, 0);
+	transition: transform 0.3s ease-out;
+}
+
+.header-phone-number {
+	transition: opacity 0.3s ease;
+}
+
+.header-phone-link {
+	display: block;
+	line-height: 1;
+	text-decoration: none;
+	color: $pink;
+	font-weight: $font-bold;
+	padding: 16px 14px 16px 60px;
+	white-space: nowrap;
+
+	&:hover {
+		.header-phone-number {
+			opacity: 0;
+		}
+
+		.header-call-us {
+			transform: translate3d(0, 0, 0);
+		}
+	}
+}
+
+.header-phone-icon {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: $pink;
+	color: $white;
+	width: 48px;
+	height: 48px;
+	text-align: center;
+	line-height: 48px;
+	@include font-size(2.8);
+	z-index: 1;
+}
+
+.component-header-logo {
+	text-align: center;
+	margin: 110px 0;
+	text-shadow: 1px 1px 10px $text-shadow;
+}
+
+.header-site-name {
+	font-family: 'Lobster', cursive;
+	color: $white;
+	@include font-size(14);
+	line-height: 1;
+	margin: 0 auto 7px;
+	text-align: center;
+
+	opacity: 0;
+	transform: scale(0.7) translate3d(0, 50px, 0);
+}
+
+.header-logo-hr {
+	@include inline-block();
+	width: 200px;
+	background: $white;
+	height: 3px; 
+	margin: 10px auto 24px;
+
+	transform: scale(0, 1) translate3d(0, 0, 0);
+}
+
+.header-logo-needle {
+	@include inline-block();
+	vertical-align: top;
+	margin-top: -23px;
+	width: 70px;
+	height: 70px;
+	background-image: url('../images/needle.svg');
+	background-size: 70px;
+	fill: $white;
+
+	opacity: 0;
+	transform: scale(0.2) translate3d(0, 0, 0);
+}
+
+.header-site-description {
+	font-weight: $font-bold;
+	color: $white;
+	@include font-size(2.6);
+	text-transform: uppercase;
+	opacity: 0;
+	transform: scale(0.8) translate3d(0, 0, 0);
+}
+
+.content-loaded {
+
+	.header-site-name {
+		opacity: 1;
+		transform: scale(1) translate3d(0, 0, 0);
+		transition-property: all;
+		transition-duration: 0.6s;
+		transition-delay: 0.4s;
+		transition-timing-function: ease-out;
+	}
+
+	.header-logo-hr {
+		transform: scale(1, 1);
+		transition-property: transform;
+		transition-duration: 0.6s;
+		transition-delay: 0.6s;
+		transition-timing-function: ease-out;
+	}
+
+	.header-logo-needle {
+		transform: scale(1);
+		opacity: 1;
+		transition-property: all;
+		transition-duration: 0.7s;
+		transition-delay: 0.6s;
+		transition-timing-function: ease-out;
+	}
+
+	.header-site-description {
+		opacity: 1;
+		transition-property: all;
+		transition-duration: 0.6s;
+		transition-delay: 0.7s;
+		transform: scale(1) translate3d(0, 0, 0);
+	}
+
+}

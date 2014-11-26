@@ -1,0 +1,82 @@
+body {
+	font-family: 'Raleway', sans-serif;
+	font-weight: $font-regular;
+	@include font-size(1.6);
+	line-height: 1.6;
+	color: $copy;
+}
+
+strong {
+	font-weight: $font-bold;
+}
+
+p {
+	margin: 0 0 30px;
+}
+
+.typography-hr {
+	width: 100px;
+	height: 4px;
+	background: $pink;
+	margin: 0 auto;
+	border: none;
+	appearance: none;
+}
+
+.typography-hr-alt-color {
+	background: $white;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+
+.h1,
+.h2,
+.h3 {
+	line-height: 1.2;
+	margin: 0 0 30px;
+}
+
+.h1 {
+	@include font-size(3.0);
+}
+
+.h2 {
+	@include font-size(2.4);
+}
+
+.h3 {
+	@include font-size(1.8);
+}
+
+.heading-line {
+	display: block;
+}
+
+.heading-strong {
+	font-weight: $font-bold;
+}
+
+.heading-alt-color {
+	color: $pink;
+}
+
+.heading-feature {
+	padding-left: 30px;
+	border-left: 4px solid $pink;
+}
+
+.heading-breakout {
+	color: $white;
+	margin-bottom: 0;
+}

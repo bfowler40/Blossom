@@ -1,0 +1,29 @@
+
+$white: #ffffff;
+$black: #000000;
+$grey: #f5f5f5;
+
+$shadow: #cccccc;
+$text-shadow: #555555;
+$copy: #555555;
+
+$pink: #f1a9a0;
+$pink-variant-1: #ffeae8;
+$pink-variant-2: #ffd1cb;
+$pink-variant-3: #ca7267;
+$pink-variant-4: #a3463a;
+
+$font-regular: 400;
+$font-bold: 600;
+
+.color-guide {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.color-guide-item {
+	height: 30px;
+	width: 60px;
+	float: left;
+}
