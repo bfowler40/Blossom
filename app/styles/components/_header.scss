@@ -112,11 +112,14 @@
 }
 
 .header-site-description {
+	top: 0;
+	left: 0;
 	font-weight: $font-bold;
 	color: $white;
 	@include font-size(2.6);
 	text-transform: uppercase;
 	opacity: 0;
+	-webkit-backface-visibility: hidden;
 	transform: translate3d(0, 0, 0);
 }
 
@@ -151,8 +154,8 @@
 	.header-site-description {
 		opacity: 1;
 		transition-property: all;
-		transition-duration: 0.7s;
-		transition-delay: 0.9s;
+		transition-duration: 0.8s;
+		transition-delay: 0.8s;
 		transform: translate3d(0, 0, 0);
 	}
 

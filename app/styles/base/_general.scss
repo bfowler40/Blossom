@@ -21,7 +21,8 @@ body {
 }
 
 .wrapper {
-	background: url('../images/jacket-grey-full.jpg') no-repeat;
+	background-image: url('../images/jacket-grey-full.jpg');
+	background-repeat: no-repeat;
 	background-position: center -320px;
 	display: block;
 	overflow: hidden;
@@ -30,6 +31,11 @@ body {
 .content-loaded {
 	opacity: 1;
 	transition: opacity 0.8s ease-out;
+}
+
+.vertical-center {
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .inline-block {

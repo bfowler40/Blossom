@@ -382,7 +382,7 @@ for (var key in ngMap.directives) "MapController" != key && ngMapModule.directiv
 // jshint ignore: start
 
 var blossom = angular.module('blossom', ['ngMap']);
-blossom.directive('body', function($window){
+blossom.directive('body', function(){
 
 	return {
 
@@ -390,31 +390,14 @@ blossom.directive('body', function($window){
 		
 		link: function(scope, element, attrs){
 
-			var loaded = 'content-loaded';
+			var img = new Image();
+			img.src = attrs.background;
 
-			window.addEventListener( "DOMContentLoaded", function(){
-
-				element.addClass(loaded);
-
-			});
-
-			window.setTimeout(function(){
-
-				if(!element.hasClass(loaded)){
-
-					element.addClass(loaded);
-					
-				}
-
-			}, 3000);
-
-			Modernizr.csstransforms3d();
-
-			// if(!Modernizr.csstransforms3d){
+			img.onload = function(){
 				
-			// 	element.addClass('no-csstransforms3d');
+				element.addClass('content-loaded');
 
-			// };
+			}
 
 		}
 
