@@ -2,4 +2,16 @@
 .section-services {
 	background: $pink;
 	color: $white;
+	overflow: hidden;
+}
+
+.section-services-item {
+	width: 33%;
+	float: left;
+	box-sizing: border-box;
+	padding: 40px 40px 20px;
+
+	&:nth-child(even){
+		@extend .pink-variant-2;
+	}
 }
