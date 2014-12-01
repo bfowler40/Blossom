@@ -73,6 +73,10 @@
 	text-align: center;
 	margin: 110px 0;
 	text-shadow: 1px 1px 10px $text-shadow;
+
+	&:before {
+		@include filter();
+	}
 }
 
 .header-site-name {
