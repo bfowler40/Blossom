@@ -53,7 +53,13 @@
 
 @media all and (max-width: 600px){
 
-	
+
+	.components-footer-mobile-break {
+		font-size: 0;
+		display: block;
+		clear: left;
+	}
+
 	.general-flex-container {
 		display: block;
 	}
