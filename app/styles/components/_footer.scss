@@ -9,3 +9,15 @@
 	margin: 0 0 0 40px;
 	@include font-size(1.4);
 }
+
+.component-footer-link {
+	text-decoration: none;
+	cursor: pointer;
+	color: $white;
+	
+	transition: color 400ms ease-out;
+
+	&:hover {
+		color: $pink;
+	}
+}

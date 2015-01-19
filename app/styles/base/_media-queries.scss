@@ -53,6 +53,15 @@
 
 @media all and (max-width: 600px){
 
+	
+	.general-flex-container {
+		display: block;
+	}
+
+	.general-flex-item {
+		flex: none;
+	}
+
 	.container-two-col-section,
 	.section-intro-header {
 		float: none;
