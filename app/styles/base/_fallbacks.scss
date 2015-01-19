@@ -1,0 +1,24 @@
+
+.no-flexbox {
+
+	.section-services-item {
+		display: table;
+		min-height: 300px;
+		width: 33%;
+		float: left;
+		background: yellow;
+	}
+
+}
+
+
+.browsehappy {
+	background: $white;
+	margin-top: 100px;
+	text-align: center;
+
+	a {
+		color: $pink;
+	}
+}
+

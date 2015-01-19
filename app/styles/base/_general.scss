@@ -20,6 +20,10 @@ body {
 	}
 }
 
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
+}
+
 .wrapper {
 	background-image: url('../images/jacket-grey-full.jpg');
 	background-repeat: no-repeat;
@@ -71,10 +75,4 @@ body {
 	&:hover {
 		color: $pink;
 	}
-}
-
-.browsehappy {
-	background: $white;
-	margin-top: 65px;
-	text-align: center;
 }

@@ -7,6 +7,7 @@
 @import 'base/general';
 @import 'base/typography';
 @import 'base/layout';
+@import 'base/animate';
 
 @import 'components/header';
 @import 'components/form';
@@ -20,3 +21,4 @@
 @import 'sections/location';
 
 @import 'base/media-queries';
+@import 'base/fallbacks';
