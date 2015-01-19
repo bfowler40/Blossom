@@ -24,6 +24,14 @@ body {
 	display: none !important;
 }
 
+.general-flex-container {
+	display: flex;
+}
+
+.general-flex-item {
+	flex: 1;
+}
+
 .wrapper {
 	background-image: url('../images/jacket-grey-full.jpg');
 	background-repeat: no-repeat;
@@ -75,4 +83,10 @@ body {
 	&:hover {
 		color: $pink;
 	}
+}
+
+.browsehappy {
+	background: $white;
+	margin-top: 65px;
+	text-align: center;
 }
